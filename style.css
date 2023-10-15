@@ -1,0 +1,288 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container, .img_vid_content1, .img_vid_content2, .img_vid_content3, .img_vid_content4, 
+.Question{
+    border-bottom:10px solid #333;
+}
+body{
+    width: 100%;
+    height: 100%;
+    color: white;
+    background: black;
+    font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+.container::before{
+    content: " ";
+    background: url(netflix.jpeg) no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    z-index: -1;
+} 
+.container .navbar{
+    height: 100%;
+    display: flex;
+}
+.container .navbar .left{
+    height: 100%;
+    display: flex;
+    float: left;
+}
+.container .navbar .left img{
+    height: 100px;
+    position: absolute;
+    top: 1%;
+    left: 130px;
+}
+.container .navbar .right{
+    height: 100%;
+    position: absolute;
+    float: right;
+    right: 150px; 
+    top: 45px;
+}
+.language {
+    margin: auto; 
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    padding: 7px 10px;
+    color: white;
+    background:none;
+    cursor: pointer;
+    margin-right: 10px;
+    outline:none;
+}
+.language option{
+    background-color: grey;
+    margin-right: 10px;
+}
+.container .navbar .right button{
+    margin: auto;
+    margin-left: 10px;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 7px 18px;
+    background: #e50914;
+    cursor: pointer;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    transition: background-color 0.3s;
+}
+.container .navbar .right button:hover{
+    background-color: #89161b;
+}
+.container .navbar .right button a{
+    text-decoration: none;
+    color: white
+}
+.container .title{
+     padding: 200px 240px;
+}
+.container .title .content{
+    width: 950px;
+    height: auto;
+    padding: 75px 0;
+    text-align: center;
+    margin-top: 60px;
+}
+.container .title .content h1{
+    white-space: nowrap;
+    width: 650px;
+    margin: auto auto auto 10px;
+    font-size: 3.1rem;
+    text-align: center;
+}
+.container .title .content h2{
+    width: 650px;
+    margin: auto;
+    font-size: 1.8rem;
+    text-align: center;
+}
+.email-container form h3{
+    font-size: 1.2rem;
+    margin: 18px 0;
+    text-align: auto;
+}
+.email-container form .email{
+    width: 1000px;
+    margin: auto;
+}
+.email-container form .email input{
+    height: 60px;
+    width: 400px;
+    margin: auto;
+    margin-right: 10px;
+    padding: 20px;
+    font-size: 20px;
+    outline: none;
+    background: none;
+    border-radius: 5px;
+    border: 0.01px solid;
+    border-color: rgb(180, 174, 174);
+    color: aliceblue;
+}
+.email-container form .email button{
+    margin: auto;
+    margin-left: 10px;
+    height: 58px;
+    width: 190px;
+    align-items: center;
+    font-size: 25px;
+    padding: 7px 15px;
+    background: #e50914;
+    cursor: pointer;
+    outline: none;
+    border-radius: 5px;
+    border:none;
+    margin-left: -5px;
+    transition: background-color 0.3s;
+}
+.email-container form .email button:hover{
+    background-color: #89161b;
+}
+.email-container form .email button a{
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+.container .hline hr{
+    border: none; 
+    height: 9px; 
+    background-color: #333;
+    margin: 20px 0;
+}
+
+/* login part of home page completed */
+
+.img_vid_content1 ,.img_vid_content2, .img_vid_content3, .img_vid_content4{
+    display: flex;
+    align-items: center;
+    padding: 60px;
+    vertical-align: top;
+}
+
+.litem1 h1, .ritem2 h1, .litem3 h1, .ritem4 h1 {
+    font-size: 50px;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+
+.litem1 h2 , .ritem2 h2, .litem3 h2, .ritem4 h2{
+    font-size: 25px;
+    font-weight: normal;
+}
+
+.ritem1 { 
+    position: relative;
+}
+
+ .ritem1 > video {
+    position: absolute;
+    left: 12%;
+    top: 20%;
+    z-index: -1;
+}
+
+.downlayout{
+    border:2px solid #535353;
+    border-radius: 10px;
+    background-color: black ;
+    width: 60%;
+    position: absolute;
+    bottom: 10%;
+    left: 20%;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    gap: 20px;
+}
+.downlayout p{
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.downlayout span{ 
+    color: rgb(49, 49, 233);
+}
+.downlayout img{
+    width:70px;
+    height:6pc;
+}
+.litem2{
+    position: relative;
+}
+.ritem3 {
+    position: relative;
+}
+.ritem3 > video{
+    position: absolute;
+    width: 400px;
+    left: 18%;
+    top: 10%;
+    z-index: -1;
+}
+.Question{
+    padding: 40px 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.Question h1{
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+.freq_question{
+    display: flex;
+    justify-content: space-between;
+    align-self: stretch;
+    padding: 30px;
+    background-color: #282828;
+    border-radius: 2px;
+    transition: background-color 0.3s;
+}
+.freq_question:hover{
+    background-color: #4d4949;
+}
+
+.freq_question p, .freq_question span{
+    font-size: 25px !important;
+} 
+.Question .last_part form  h3{
+    font-size: 1.2rem;
+    margin: 20px 0;
+    text-align: auto;
+}
+
+/* footer styling starts for here */
+
+.footer-container{
+    padding: 100px;
+    color:#AFAFAF;
+}
+.footer-container a{
+    color:#AFAFAF;
+}
+.link-cont{
+    display: flex;
+    gap: 250px;
+    justify-content: flex-start ;
+    padding: 40px 0;
+}
+.link-item{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+
+
